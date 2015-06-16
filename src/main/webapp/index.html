@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>GAMACTT: Groundwater Age Mixtures and Contaminant Trends Tool(Version 1)</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="x-ua-compatible" content="IE=9,8" >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="The official website of the USGS NAWQA Public-supply Water Well Assessment project.">
+<meta name="keywords" content="water, well, public-supply, USGS, NAWQA, contaminants, science, pathogens, quality">
+<meta name="author" content="Melanie McCalmont and Alice McCarthy">
+<meta name="publisher" content="U.S. Geological Survey NAWQA">
+<meta name="created" content="20110909">
+<meta name="revised" content="20110918">
+<!--this sets the usgs std styles -->
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<!--this sets the title bar color and default header -->
+<link href="css/custom.css" rel="stylesheet" type="text/css" />
+<!--this sets the main styles used in the Water framework -->
+<link href="css/framework.css" rel="stylesheet" type="text/css" />
+<!--this adds or changes styles for TANC applications -->
+<link href="css/wellassessment.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/wellassessment-print.css" rel="stylesheet" type="text/css" media="print"/>
+
+<!--[if IE]> <style type="text/css"> body {word-wrap: break-word;} </style><![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<link type="text/css" href="css/ui-lightness/jquery.ui.all.css" rel="stylesheet" />
+<link type="text/css" href="css/slide.css" rel="stylesheet" />
+<link type="text/css" href="css/checklist.css" rel="stylesheet" />
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" id="menutable"  style="width:100%;">
+    <tr><td colspan="2" valign="top"><!-- START header and top navigation section -->
+            <!-- BEGIN USGS Header Template -->
+<div id="usgswellassessment">
+	<div id="usgsbanner">
+		<div id="usgsidentifier"><a href="http://www.usgs.gov/"><img src="images/header_graphic_usgsIdentifier_white.jpg" alt="USGS - science for a changing world" title="U.S. Geological Survey Home Page" width="178" height="72" /></a></div>
+		<div id="usgsccsabox">
+			<div id="usgsccsa">
+			  <br /><a href="http://www.usgs.gov/">USGS Home</a>
+			  <br /><a href="http://www.usgs.gov/ask/">Contact USGS</a>
+			  <br /><a href="http://search.usgs.gov/">Search USGS</a>
+<!-- 
+              <br /><a href="javascript:void(0)" id="guide" onclick="return showGuide()">GAMACTT Guide</a>
+-->
+ 			</div>
+		</div>
+	</div>
+</div>
+<!-- END USGS Header Template -->
+</td>
+    </tr>
+    <tr id="usgslinkbar">
+    <td></td>
+  </tr>
+</table>
+
+<table cellspacing="0" id="contenttable">
+    <!--DWLayoutTable-->
+    <tr >
+      <td width="100%" valign="top" class="addborderright addborderleft">
+        <table id="contenttable" cellpadding="0" cellspacing="0">
+            <!--DWLayoutTable-->
+            <tr>
+		<td id="content-pane" valign="top">
+		<table id="contenttable" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td id="mainbody" valign="top">
+
+
+<h1>Public-Supply-Well Vulnerability to Contamination </h1>
+
+   <p>The USGS National Water Quality Assessment (NAWQA) program has completed an intensive study 
+   of public-supply well vulnerability to contaminants in groundwater. Understanding what factors 
+   affect public-supply-well vulnerability to contamination can lead to opportunities to 
+   enhance source water assessment and protection efforts. Such understanding also can help source 
+   water protection partners anticipate and measure protection-related outcomes. These <b>Decision 
+   Support System Tools</b>, based on the results of the USGS NAWQA study, are designed to help 
+   and managers measure and address the vulnerabilities of public-supply wells.</p>
+
+    <br/>
+    <br/>
+<h1>Toolbox Quick Links</h1>
+    <br/>
+
+	
+    <a href="agemixtool.html"  class="glyph agemixGlyph">
+    <img src="images/toolboxes/agemixGlyph.png">
+    </a>
+	<a href="recharge_mixing_equations.html" class="glyph mixGlyph">
+    <img src="images/toolboxes/mixGlyph.png">
+    </a>
+    <a href="geochemical.html" class="glyph redoxGlyph">
+    <img src="images/toolboxes/redoxGlyph.png">
+    </a>
+    <a href="pf-zot.html" class="glyph zotGlyph">
+    <img src="images/toolboxes/zotGlyph.png">
+    </a>
+    <script>
+    function toPageTop() {
+        window.scrollTo(0,0);
+    }
+    $('a.glyph').click(toPageTop);
+    </script>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h3>Decision Support System Help</h3>
+
+	<p style="width:800px;"><small>All information is based on the USGS NAWQA study &quot;The Quality of Our Nation's Water &mdash; Factors 
+Affecting Public-Supply-Well Vulnerability to Contamination: Understanding Observed Water Quality and 
+Anticipating Future Water Quality&quot; by Sandra M. Eberts, Mary Ann Thomas and Martha L. Jagucki (2012). 
+In case of conflicting information, the USGS Circular takes precedence over this educational website.</small></p>
+
+	<p style="width:800px;"><small>To get help on using this website, please contact us at <a id="contact-email" href="#">wellassessment@usgs.gov</a></small></p>
+	
+	
+    				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+<table id="contenttable" cellspacing="0" cellpadding="0">
+    <!--DWLayoutTable-->
+<tr>
+        <td width="100%" height="16" valign="top" class="addborderright addborderleft">	<!-- BEGIN USGS Footer Template -->
+	<div id="usgsfooter">
+    <div id="linksfooterbar">
+	<a href="http://www.usgs.gov/" title="USGS Home page">USGS Home</a>
+	<a href="http://water.usgs.gov/" title="USGS Water Resources Discipline">Water Resources</a>
+	<a href="http://biology.usgs.gov/" title="USGS Biological Resources Discipline">Biology</a>
+	<a href="http://geography.usgs.gov/" title="USGS Geography Discipline">Geography</a>
+
+	<a href="http://geology.usgs.gov/index.htm" title="USGS Geology Discipline">Geology</a>
+	<a href="http://www.usgs.gov/ngpo/" title="USGS National Geospatial Program Office">Geospatial</a>
+</div>
+	<p id="usgsfooterbar">
+		<a href="http://www.usgs.gov/laws/accessibility.html" title="Accessibility Policy (Section 508)">Accessibility</a>
+		<a href="http://www.usgs.gov/foia/" title="Freedom of Information Act">FOIA</a>
+		<a href="http://www.usgs.gov/laws/privacy.html" title="Privacy policies of the U.S. Geological Survey.">Privacy</a>
+
+		<a href="http://www.usgs.gov/laws/policies_notices.html" title="Policies and notices that govern information posted on USGS Web sites.">Policies and Notices</a>
+	</p>
+		<p id="usgsfootertext">
+        <a href="http://www.takepride.gov/"><img src="images/footer_graphic_takePride.jpg" alt="Take Pride in America logo" title="Take Pride in America Home Page" width="60" height="58" /></a>
+		<a href="http://usa.gov/"><img src="images/footer_graphic_usagov.jpg" alt="USA.gov logo" width="90" height="26" style="float: right; margin-right: 10px;" title="USAGov: Government Made Easy." /></a>
+		<a href="http://www.doi.gov/">U.S. Department of the Interior</a> |
+        <a href="http://www.usgs.gov/">U.S. Geological Survey</a>
+
+        <br />
+ <br />
+	Page Contact Information: <a href="mailto:wellassessment@usgs.gov?subject=Public-supply Well Assessment">wellassessment@usgs.gov</a><br />
+	Page Last Modified: <!-- #BeginDate format:Am1a -->April 17, 2014 1:37 AM<!-- #EndDate --> </p>
+	</div>
+	<!-- END USGS Footer Template -->
+<!--Use the Framework exec cmd when you are on a staging or a state page.   This script interprets the page you are coming from and automatically pulls the RT imagemap file for that state-->
+<!--#exec cmd="/afs/usgs.gov/www/Framework/includes/RTmap/load_waterwatch_image-map.ksh" --></td>
+    </tr>
+    
+</table>
+
+<div id="splashContent" class="hidden" title="GAMACTT User's Guide">
+      <p>
+        Use this USGS Groundwater Age Mixtures and Contaminant Trends Tool to explore the effects of basic aquifer properties and well configurations on groundwater age mixtures in groundwater discharge and on contaminant trends from varying nonpoint-source contaminant input scenarios. 
+      </p>
+      <h3>Guide Resources</h3>
+      <p>
+	        <a href="GAMACTT-v1-Documentation_and_Example_applications.pdf" target="_blank">Description of webtool and example applications.</a>
+      </p>    
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48058058-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+<!-- InstanceEnd -->
+</html>

@@ -1,0 +1,64 @@
+#tab {
+	width:18px;
+	height:315px;
+	position:absolute;
+	right:0px;
+	/*top:100px*/;
+	display:block;
+	cursor:pointer;
+	background:#bababa;
+	border:solid 2px #656567;
+	/*border-left:2px solid black*/;
+	border-top-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 20px 0 0 20px;
+	filter:progid:DXImageTransform.Microsoft.DropShadow(sProperties);
+	-webkit-box-shadow: 1px 1px 5px #000;  
+	-moz-box-shadow: 1px 1px 5px #000; 
+}
+#panel {
+    position:absolute;
+	right:0px;
+	overflow-y:scroll;
+	/*top:50px*/;
+	background-color:#999999;
+	height:750px;
+	width:0;/*new line*/
+	/*-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;*/
+	filter:progid:DXImageTransform.Microsoft.DropShadow(sProperties);
+	-webkit-box-shadow: 1px 1px 5px #000;  
+	-moz-box-shadow: 1px 1px 5px #000; 
+	/*display:none;if javascript isnt running*/
+}
+#panel .content {
+	width:92%;
+	margin-right:70px;
+	display: none;
+}
+#panel .content p {
+	font-size:11px;
+}
+#panel .content h2 {
+	color:#CC3300;
+}
+#panel .content img {
+	float:left;
+	padding:0 10px 5px 0;
+}
+
+#content-pane {
+	width:87%
+}
+
+#lefttable {
+	width:10%;
+}

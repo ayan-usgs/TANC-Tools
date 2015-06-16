@@ -1,0 +1,567 @@
+.agemix-modal .ui-widget-header {
+    background: none repeat scroll 0 0 #345280;
+    color: white;
+}
+.agemix-modal .ui-dialog-content {
+    overflow: hidden;
+}
+.agemix-modal .ui-dialog-titlebar-close {
+    display: none;
+}
+#splashContent > p {
+	width:auto;
+}
+
+#mainbody {
+	padding-left:2px;
+}
+
+
+h1 {
+    font-size: 120%;
+    margin-top: 5px;
+}
+
+
+.printablePage {
+    position: absolute;
+    top     : 150px;
+    left    : 1100px;
+    color   : white !important;
+    font-weight:bold;
+    z-index : 999;
+}
+.onPrintablePage {
+    position: absolute;
+    top     :   90px;
+    left    : 1150px;
+    color   : blue !important;
+    font-weight:bold;
+    z-index : 999;
+}
+
+
+ul.poison {
+    margin-bottom: 40px !important;
+}
+
+.footnote {
+    margin-top: 140px;
+}
+
+div.yAxis div.tickLabel {
+	width:35px !important;
+}
+
+div.zoomToWellScreen {
+	position: absolute;
+	bottom  : -20px;
+	left    : 200px;
+}
+
+#contenttable {
+    width: 1300px;
+    clear: both;
+    margin-bottom:20px;
+}
+#usgsfooterbar {
+    width: 1300px;
+}
+#usgsfootertext {
+    width: 1300px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+    margin: 0;
+}
+ul.agemix-fields {
+    font-weight:bold;
+    list-style-type: none;
+    position: relative;
+    z-index: 999;
+    width:400px;
+}
+li.agemix-field {
+}
+div.agemix-field {
+    display:inline-block;
+	width:230px;
+}
+div.agemix-input {
+    display:inline;
+}
+div.agemix-input input {
+    width:45px;
+    text-align: right;
+}
+div.agemix-subfield {
+    color: grey;
+}
+div.agemix-heading {
+    margin-left: -15px;
+    margin-top: 5px;	
+    width:245px;
+}
+div.oldValue {
+    color: red;
+    display: inline-block;
+    font-style: oblique;
+}
+
+select#units {
+    margin-left:-22px;
+    width:70px;
+    padding:0;
+}
+
+
+div.agemix-calcfield {
+    display:inline-block;
+}
+div.agemix-displayfield {
+    display:inline-block;
+    font-weight:normal;
+    font-size:90%;    
+}
+div.agemix-displaySubfield {
+    margin-left:20px !important;
+    width:210px  !important;
+}
+div.agemix-valuefield {
+    font-weight:normal;
+    text-align:right;
+    width:45px;
+}
+
+div.agemix-calc {
+    display:inline-block;
+}
+div.agemix-calc input{
+    width:52px;
+}
+div.plot {
+    width:400px;
+    height:200px;
+    position:relative;
+}
+#calc-label {
+    height:72px;
+}
+.validation-error {
+    color:red;
+    opacity: 0.01;
+}
+#calculate {
+    position:relative;
+    top:-18px;
+}
+
+
+#outflowArrow {
+    position:absolute;
+}
+
+.ylabel {
+    display:block;
+    position:absolute;
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+.plot-title {
+    position:absolute;
+    top     :  5px;
+    left    : 50px;
+    width   :400px;
+    display :inline;
+    font-weight: bold;
+    text-align: center;
+}
+.plot-xlabel {
+    position:absolute;
+    top     :255px;
+    left    : 50px;
+    width   :400px;
+    display :inline;
+    text-align: center;
+}
+.plot-depth-ylabel {
+    position:absolute;
+    top     :125px;
+    left    :-70px;
+}
+.flot-plot {
+    position:absolute;
+    top     :50px;
+    left    :35px;
+    width   :400px;
+    height  :200px;
+}
+
+
+
+#age-flow-group {
+	position:absolute;
+	top     :200px;
+	left    :335px;
+	width   :450px;
+	height  :280px;
+}
+#age-flow-plot {
+    position:absolute;
+    top     :49px;
+    left    :75px;
+}
+
+
+#age-flow-plot div.legend {
+    position:relative;
+    top     :-235px;
+    left    :-200px;
+}
+#age-well-plot div.legend {
+    position:relative;
+    top     : -237px;
+    left    : 15px;
+}
+#age-well-plot div.legend table tr {
+    display :inline-block;
+}
+#age-well-plot div.legend table {
+	width: 400px !important;
+}
+
+
+#age-depth-group {
+    position:absolute;
+    top     :200px;
+    left    :780px;
+    width   :450px;
+    height  :280px;
+}
+#age-depth-plot div.legend {
+    position:relative;
+    top: -237px;
+    left: -20px;
+}
+
+
+div.legend table tr {
+    display:inline-block;
+}
+
+
+#gw-inc-group {
+    position:absolute;
+    top     :480px;
+    left    :335px;
+    width   :450px;
+    height  :280px;
+}
+
+#gw-increment-plot-ylabel {
+    top   : 120px;
+    left  : -50px;
+    height:  32px;
+    width : 140px;
+}
+#gw-increment-plot div.legend {
+    position:relative;
+    top: -235px;
+    left: -30px;
+}
+
+
+#gw-sum-group {
+    position:absolute;
+    top     :480px;
+    left    :780px;
+    width   :450px;
+    height  :280px;
+}
+
+#gw-cumulative-plot-ylabel {
+    top   : 120px;
+    left  : -50px;
+    height:  32px;
+    width : 150px;
+}
+#gw-cumulative-plot div.legend {
+    position:relative;
+    top: -235px;
+    left: -30px;
+}
+
+
+
+#contaminant-group {
+    position:absolute;
+    top     :785px;
+    left    :335px;
+    width   :450px;
+    height  :280px;
+}
+
+#contaminant-plot div.legend {
+    position:relative;
+    top: -236px;
+    left: 0px;
+}
+#contaminant-plot div.legend table tr {
+    display:inline-block;
+}
+#contaminant-plot-ylabel {
+    top   : 120px;
+    left  : -70px;
+    height:  32px;
+    width : 190px;
+}
+
+
+.plot-xlabel-contaminant {
+    top:280px !important;
+}
+
+#contaminant-depth-xlabel {
+	width:350px;
+	left:120px;
+}
+
+#contaminant-depth-group {
+    position:absolute;
+    top     :760px;
+    left    :780px;
+    width   :450px;
+    height  :300px;
+}
+
+#contaminant-depth-plot-ylabel {
+    top:155px !important;
+}
+
+#contaminant-depth-year {
+    position:absolute;
+    top     : 25px;
+    left    :150px;
+    width   :350px;
+    z-index :999;
+}
+#contaminant-depth-year::selection {
+    background-color:white;
+}
+#contaminant-depth-year-label {
+    font-weight:bold;
+}
+#contaminant-depth-year-label::selection {
+    background-color:white;
+}
+
+#contaminant-depth-year a,
+#contaminant-depth-year div {
+    display:inline-block;
+    vertical-align:middle;
+}
+a.imageButton {
+	width : 30px;
+	height: 30px;
+}
+#yearSelected {
+    width     :50px;
+    text-align:right;
+}
+.arrow {
+	width : 30px;
+	height: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.arrowNormalLeft {
+    background-image: url("../images/toolboxes/arrow-left.png");
+}
+.arrowPressLeft {
+    background-image: url("../images/toolboxes/arrow-left-press.png");
+}
+.arrowHoverLeft {
+    background-image: url("../images/toolboxes/arrow-left-hover.png");
+}
+.arrowNormalRight {
+    background-image: url("../images/toolboxes/arrow-right.png");
+}
+.arrowPressRight {
+    background-image: url("../images/toolboxes/arrow-right-press.png");
+}
+.arrowHoverRight {
+    background-image: url("../images/toolboxes/arrow-right-hover.png");
+}
+
+#contaminant-depth-flow {
+    position:absolute;
+    top     : 75px;
+    left    : 73px;
+}
+#contaminant-depth-well {
+    position:absolute;
+    top     : 75px;
+    left    : 35px;
+    width   :116px;
+    height  :184px;
+}
+#contaminant-depth-zone {
+    position:absolute;
+    top     : 75px;
+    left    : 75px;
+    width   : 76px;
+    height  :184px;
+}
+#contaminant-depth-plot {
+    position:absolute;
+    top     : 75px;
+    left    :145px;
+}
+#contaminant-depth-percent {
+    position:absolute;
+    top     : 55px;
+    left    :145px;
+}
+#contaminant-depth-well-outflow {
+    position:absolute;
+    top     : 52px;
+    left    :102px;
+}
+
+#contaminant-depth-recharge-ylabel {
+	top  : 150px;
+	left : 415px;
+	width: 120px;
+}
+
+#contaminant-depth-year-labels {
+    position:absolute;
+	overflow:hidden;
+    top     : 70px;
+    left    :430px;
+}
+
+#contaminant-depth-year-labels div {
+    position: relative;
+    left:5px;
+	background-color: white;
+}
+#contaminant-depth-year-labels #topDate {
+	z-index: 999;
+    top:-3px;
+}
+#contaminant-depth-year-labels #topDateP {
+    top:30px;
+}
+#contaminant-depth-year-labels #botDateP {
+    top:66px;
+}
+#contaminant-depth-year-labels #botDate {
+	z-index: 999;
+    top:132px;
+}
+
+
+
+
+#poisonInAq {
+    position: relative;
+    top:-1990px;
+    left:550px;
+    margin-top:5px;
+}
+#poisonInAqIcon {
+    display:inline-block;
+    width:50px;
+    height:20px;
+    background-color:#900;
+    opacity: 0.45;
+    vertical-align:middle;
+}
+#poisonInAqLabel {
+    width:130px;
+    vertical-align:middle;
+    display:inline-block;
+}
+
+
+
+
+td.legendColorBox {
+    vertical-align:middle !important;
+}
+td.legendColorBox div {
+    border: 0 !important;
+}
+td.legendColorBox div div {
+    width: 20px !important;
+    height: 2px !important;
+}
+
+
+#usgslinkbar {
+    color:white;
+    padding-left:5px;
+    text-align  :left;
+    font-weight :bold;
+    font-size   :138%
+}
+#usgsbanner img {
+    margin:0 !important;
+}
+#splashContent {
+    display:none;
+}
+
+
+@media print {
+    #contaminant-depth-well-outflow {
+        top: 56px !important;
+        left: 106px !important;
+    }
+    #contaminant-depth-flow {
+        top: 79px !important;
+        left: 77px !important;
+    }
+    #age-flow-plot {
+        top: 54px;
+        left: 80px;
+    }
+    #age-well-plot  div.legend   table {
+        width:420px !important;
+        right: 0px !important;
+        left: 10px !important;
+    }
+    h1 {
+        margin-left: 20px;
+    }
+    .agemix-fields  {
+        left: 20px;
+    }
+    .footnote {
+        display:none;
+    }
+    #usgsfooter {
+        display:none;
+    }
+    .printablePage {
+        display:none;
+    }
+    body {
+        position:relative;
+        top:-80px;
+    }
+}

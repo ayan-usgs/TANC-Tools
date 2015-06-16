@@ -1,0 +1,27 @@
+/* CSS Document */
+@media print{
+body { background-color:#ffffff; background-image:none; color:#000000;}
+h1, h2, h3 {page-break-after:avoid;}
+h2 { margin:0px;}
+img { 
+     page-break-inside:avoid; 
+     page-break-after:avoid; 
+}
+P, UL, LI {color:#000000}
+td { background-image:none }
+#mainbody { 
+  color : #000000; 
+  background : #ffffff;
+  margin-left: -10px;
+}
+#contenttable { 
+  margin-left: -10px;
+}
+#footertable {
+	margin-left: -10px;
+}
+a { text-decoration : underline; color : #0000ff; }
+.noprint {display: none;}
+#leftbar, #linksfooterbar, #leftcell, #lefttable, #usgsidentifier, #usgstitle { display: none;}
+#topnav, #topnavbuttons, #subnav, #subnavdata { display: none; }
+}

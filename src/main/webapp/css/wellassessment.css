@@ -1,0 +1,269 @@
+a.emptyLink {
+    text-decoration: underline;
+}
+a:hover.emptyLink {
+	font-weight:bold;
+    cursor:pointer;
+    cursor:hand;
+}
+
+.addbordernotop {
+    border-right: 1px solid #c8cdd2;
+	border-bottom: 1px solid #c8cdd2;
+	border-left: 1px solid #d9e0e6;
+   	padding: 4px;
+}
+.addborderright {
+/*    border-right: 1px solid #c8cdd2;*/
+}
+.addborderleft {
+    border-left: 1px solid #c8cdd2;
+}
+/* --- Put a red line at the bottom of an object, usually a header -----*/
+.bottomborder2 {
+	border-bottom-color: #333333; 
+	border-bottom-style: solid; 
+	border-bottom-width: 2px;
+}
+
+.boxsection td p{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+.datatable-stretch { 
+	width:92%;
+	padding: 6px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.datatable-fixed{ 
+	width:600px;
+	padding: 6px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.datatable-fixed h2 {
+	margin-bottom: 3px; 
+	color: #003399;
+}
+dt {
+	font-size:110%; 
+	font-weight:bold;
+}
+
+/* --- Puts a full width section above or under a leftside or rightside class -----*/
+.fullside {
+	width:100%; 
+	clear:both;
+}
+
+h1 {
+	color: #003399;
+	font-size: 138%;
+	margin-top: 1em;
+	width:800px;
+}
+
+h2 {
+	color: #666666;
+	font-size: 115%;
+}
+h3 {
+	color: #003399;
+	font-size: 95%;
+}
+ul + h1, ul + h2, ul + h3, ul + p  {
+	margin-top: 12px;
+}
+a.infobox:hover span { /*the span will display just on :hover state*/
+	display:block;
+	position:absolute;
+	left:20px;
+	top:15px;
+	border:1px solid #000;
+	background-color: #FFC;
+	color: #000;
+	padding: 4px;
+	width: 250px;
+	visibility: visible;
+}
+#leftbar h2 {
+	background-color: #333333;
+	font-size: 100%;
+	padding: 4px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+.linkbar {
+	text-align:right;
+	display:inline;
+	margin-top: 5px;
+}
+.linkbar a:link,a:visited, a:active {
+	color:#FFF;
+	text-decoration:none;
+	}
+.linkbar a:hover {
+	color:#FFF;
+	text-decoration:underline;
+	padding-left: 2em;
+	}
+#linksfooterbar {
+	width: 100%;
+	padding-bottom: 3px;
+	clear: both;
+	margin-bottom: 0px;
+}
+#linksfooterbar a:hover {
+	margin-left: 4px;
+	margin-right: 32px;
+	color: #fff;
+	text-decoration: underline;
+}
+/*main TANC content bullet list spacing and styles*/
+#checklist-pane ul li  {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 12px;
+	line-height: 105%;
+}
+/*leave this to keep 100% width of TANC header*/
+#menutable {
+	width: 100%;
+	clear: both;
+}
+
+.picleftborder {
+	float: left;
+	border: 1px solid #cccccc;
+	padding: 4px;
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.picrightborder {
+	float: right;
+	border: 1px solid #cccccc;
+	padding: 4px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.searchtext {
+	color:#FFF;
+	font-size:small;
+}
+.superscript {
+    font-size:smaller;
+}
+.texttop {
+	vertical-align:text-top;
+}
+table.wisc{
+	border-collapse: collapse;
+	align: center;
+}
+table.wisc td {
+	border-top:solid thin #ccc;
+	padding: 6px;
+}
+
+.tancpagemenu {
+	padding: 0px 0px 10px 0px;
+	margin-top:14px;
+	margin-bottom:28px;
+	list-style-position: outside;
+	list-style-image: url(../images/icons/bullet.png);
+	border-top: #699  dotted thin;
+	border-bottom: #699  dotted thin;
+	width: 50%;
+}
+.tancpagemenu ul li {
+	padding-bottom: 0.15em;
+}
+	
+.tancpagemenu a:link,a:visited, a:active {
+	color:#000;
+	text-decoration:none;
+}
+.tancpagemenu a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+#usgswellassessment { 
+	background: #003399  url(../images/mappingzoneoftransport.jpg) 178px 0px no-repeat; 
+}
+#usgslogo {
+	display:none;
+}
+#usgstitle {
+	background-color: #009999; 
+	color: #ffffff; 
+	border-bottom-color:#066;
+} 
+#usgslinkbar {
+	border-bottom:#FFF thin solid;
+	background-color:#007575;
+	text-align:right;
+}
+
+
+p {
+    width:900px;
+}
+.alongSidePicture {
+    width:500px;
+    margin-right:10px;
+    margin-left:10px;
+}
+dl#glossary-list {
+	width:900px;
+}
+li.formated {
+	width:800px;
+}
+table.formated {
+  table-layout: fixed;
+  width: 900px; /* Important */
+}
+img {
+	margin:5px;
+}
+
+a.glyph img {
+    border:2px solid white;
+}
+a.mixGlyph:hover img {
+    border:2px solid green;
+}
+a.mixGlyph:active img {
+    border:2px solid #DDFFDD;
+}
+a.redoxGlyph:hover img {
+    border:2px solid #5ba4cf;
+}
+a.redoxGlyph:active img {
+    border:2px solid #FBF0DB;
+}
+a.agemixGlyph:hover img {
+    border:2px solid blue;
+}
+a.agemixGlyph:active img {
+    border:2px solid #afd8f8;
+}
+a.zotGlyph:hover img {
+    border:2px solid #2da6d0;
+}
+a.zotGlyph:active img {
+    border:2px solid #AADDEE;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>GAMACTT: Groundwater Age Mixtures and Contaminant Trends Tool(Version 1)</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="x-ua-compatible" content="IE=9,8" >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="The official website of the USGS NAWQA Public-supply Water Well Assessment project.">
+<meta name="keywords" content="water, well, public-supply, USGS, NAWQA, contaminants, science, pathogens, quality">
+<meta name="author" content="Melanie McCalmont and Alice McCarthy">
+<meta name="publisher" content="U.S. Geological Survey NAWQA">
+<meta name="created" content="20110909">
+<meta name="revised" content="20110918">
+<!--this sets the usgs std styles -->
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<!--this sets the title bar color and default header -->
+<link href="css/custom.css" rel="stylesheet" type="text/css" />
+<!--this sets the main styles used in the Water framework -->
+<link href="css/framework.css" rel="stylesheet" type="text/css" />
+<!--this adds or changes styles for TANC applications -->
+<link href="css/wellassessment.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/wellassessment-print.css" rel="stylesheet" type="text/css" media="print"/>
+
+<!--[if IE]> <style type="text/css"> body {word-wrap: break-word;} </style><![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<link type="text/css" href="css/ui-lightness/jquery.ui.all.css" rel="stylesheet" />
+<link type="text/css" href="css/slide.css" rel="stylesheet" />
+<link type="text/css" href="css/checklist.css" rel="stylesheet" />
+<script src="js/jquery/jquery.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.color.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.json-2.3.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.string.1.1.0.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.download.js" type="text/javascript"></script>
+<script src="js/jquery/jquery-ui-1.8.24.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.jstree.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/ageMixSplash.js" type="text/javascript"></script>
+
+    <link href="css/ageMixTool.css" rel="stylesheet" type="text/css">
+    <link href="css/ageMixTool-print.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script> 
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.draggable.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.dashes.min.js"></script>
+    
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" id="menutable"  style="width:100%;">
+    <tr><td colspan="2" valign="top"><!-- START header and top navigation section -->
+            <!-- BEGIN USGS Header Template -->
+<div id="usgswellassessment">
+	<div id="usgsbanner">
+		<div id="usgsidentifier"><a href="http://www.usgs.gov/"><img src="images/header_graphic_usgsIdentifier_white.jpg" alt="USGS - science for a changing world" title="U.S. Geological Survey Home Page" width="178" height="72" /></a></div>
+		<div id="usgsccsabox">
+			<div id="usgsccsa">
+			  <br /><a href="http://www.usgs.gov/">USGS Home</a>
+			  <br /><a href="http://www.usgs.gov/ask/">Contact USGS</a>
+			  <br /><a href="http://search.usgs.gov/">Search USGS</a>
+              <br /><a href="javascript:void(0)" id="guide" onclick="return showGuide()">GAMACTT Guide</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END USGS Header Template -->
+</td>
+    </tr>
+    <tr id="usgslinkbar">
+    <td>
+  </tr>
+</table>
+
+<table cellspacing="0" id="contenttable">
+    <!--DWLayoutTable-->
+    <tr >
+      <td width="100%" valign="top" class="addborderright addborderleft">
+        <table id="contenttable" cellpadding="0" cellspacing="0">
+            <!--DWLayoutTable-->
+            <tr>
+		<td id="content-pane" valign="top">
+		<table id="contenttable" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td id="mainbody" valign="top">
+
+<div class="ageMixArea">
+
+    <h1>Groundwater Age Mixture in Well<sup>1,2</sup></h1>
+    <a href="agemixtool.html" class="printablePage onPrintablePage" >Printable Page</a>
+    
+ 
+    <ul class="agemix-fields">
+        <li class="agemix-field"><div class="agemix-field agemix-heading">Units (<span class="units">m</span>): </div><div class="agemix-input">
+        <select id="units" ><option value="m" selected="true">Metric</option><option value="ft">English</option></select>
+        </div><div class="oldValue"></div></li>
+        
+        <li class="agemix-field aquifer"><div class="agemix-field agemix-heading">Aquifer Properties</div></li>
+        <li class="agemix-field aquifer"><div class="agemix-field">Saturated Thickness (<span class="units">m</span>): </div><div class="agemix-input"><input id="aquifer" type="number" value="20"></div><div class="oldValue"></div></li>
+        <li class="agemix-field aquifer"><div class="agemix-field">Porosity:</div><div class="agemix-input"><input id="porosity" type="number" value="0.4"></div><div class="oldValue"></div></li>
+        <li class="agemix-field aquifer"><div class="agemix-field">Recharge Rate(<span class="units">m</span>/yr): </div><div class="agemix-input"><input id="recharge-rate" type="number" value="0.25"><div class="oldValue"></div></li>
+        <li class="agemix-field aquifer"><div class="agemix-field agemix-subfield">Horizontal Dimension<sup>3</sup> (<span class="units">m</span>):</div><div class="agemix-input"><input id="field-length" type="number" value="2000"></div><div class="oldValue"></div></li>
+
+        <li class="agemix-field screen"><div class="agemix-field agemix-heading">Well Configuration</div></li>
+        <li class="agemix-field screen"><div class="agemix-field">Screen Top (<span class="units">m</span>): </div><div class="agemix-input"><input id="screen-top" type="number" value="5"></div><div class="oldValue"></div></li>
+        <li class="agemix-field screen"><div class="agemix-field">Screen Bottom (<span class="units">m</span>): </div><div class="agemix-input"><input id="screen-bottom" type="number" value="15"></div><div class="oldValue"></div></li>
+        <li class="agemix-field screen"><div class="agemix-field agemix-subfield">Horizontal Position<sup>3</sup> (<span class="units">m</span>):</div><div class="agemix-input"><input id="well-location" type="number" value="1000"></div><div class="oldValue"></div></li>
+        
+        <li class="agemix-field poison"><div id="calc-label" class="agemix-field agemix-calcfield"><div class="validation-error"><br><br><br></div></div><div class="agemix-calc"><input id="calculate" type="button" value="plot" class="plotButton"></div></li>
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield">Mean Age of Water in Aquifer (yrs):</div><div id="mean-aq-age" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield">Mean Age of Water in Well (yrs):</div><div id="age-mean" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield">Youngest Age of Water in Well (yrs):</div><div id="age-young" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield">Oldest Age of Water in Well (yrs):</div><div id="age-old" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield">Age Span of Water in Well (yrs):</div><div id="age-span" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield" style="margin-top:5px;">PEM Ratios for use in TracerLPM<sup>1</sup>:</div><div class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield agemix-displaySubfield">Upper Ratio (<span class="units">m</span>):</div><div id="pem-upper" class="agemix-calc agemix-valuefield"></div></li>        
+        <li class="agemix-field screen"><div class="agemix-field agemix-displayfield agemix-displaySubfield">Lower Ratio (<span class="units">m</span>):</div><div id="pem-lower" class="agemix-calc agemix-valuefield"></div></li>        
+    </ul>
+    
+    <div style="height:10px;"></div>
+    <h1 style="margin-top:60px;">Contaminant Simulation<sup>2,4</sup></h1>
+    
+    <ul class="agemix-fields poison">     
+        <li class="agemix-field"><div class="agemix-field agemix-heading">Contaminant Input<sup>5</sup></div></li>
+        <li class="agemix-field"><div class="agemix-field">Year Input Begins: </div><div class="agemix-input"><input id="start-year" type="text" value="1985" pattern="\d*"></div><div class="oldValue"></div></li>
+        <li class="agemix-field"><div class="agemix-field">Year Input Reaches Maximum: </div><div class="agemix-input"><input id="max-year" type="text" value="1990" pattern="\d*"></div><div class="oldValue"></div></li>
+        <li class="agemix-field"><div class="agemix-field">Year Input Begins to Decline: </div><div class="agemix-input"><input id="decline-year" type="text" value="1997"  pattern="\d*"></div><div class="oldValue"></div></li>
+        <li class="agemix-field"><div class="agemix-field">Year Input Ends: </div><div class="agemix-input"><input id="stop-year" type="text" value="2010"  pattern="\d*"></div><div class="oldValue"></div></li>
+        <li class="agemix-field"><div class="agemix-field agemix-heading">Contaminant Degradation<sup>6</sup></div></li>
+        <li class="agemix-field"><div class="agemix-field">Decay constant (1/yr): </div><div class="agemix-input"><input id="degrade-rate" type="text" value="0"  pattern="\d*(\.\d*)?"></div><div class="oldValue"></div></li>
+        <li class="agemix-field poison"><div id="calc-label" class="agemix-field agemix-calcfield"><div class="validation-error"><br><br><br></div></div><div class="agemix-calc"><input id="calculate" type="button" value="plot" class="plotButton"></div></li>
+
+    </ul>
+ 
+    
+    <!-- well plot is overlaid on the tracer plot -->
+    <div id="age-flow-group">
+        <div id="age-flow-plot-title"  class="plot-title">Aquifer Cross Section</div>
+        <canvas id="contrib-zone"></canvas>
+        <img id="age-flow-plot" src="images/toolboxes/ageMixOutFlowArrows.png" alt="flow diagram">
+        <div id="age-well-plot"        class="flot-plot"></div>
+        <div id="age-flow-plot-ylabel" class="ylabel depth-ylabel plot-depth-ylabel">Depth Below Water Table (<span class="units">m</span>)</div>
+        <div id="age-flow-plot-xlabel" class="plot-xlabel">Distance from Discharge Area (<span class="units">m</span>)</div>
+    </div>
+    <div id="age-depth-group">
+        <div id="age-depth-title"  class="plot-title">Age Profile</div>
+        <div id="age-depth-plot"   class="flot-plot"></div>
+        <div id="age-depth-xlabel" class="plot-xlabel">Age (years)</div>
+        <div id="age-depth-ylabel" class="ylabel depth-ylabel plot-depth-ylabel">Depth Below Water Table (<span class="units">m</span>)</div>
+    </div>
+    
+    <div id="gw-inc-group">
+        <div id="gw-increment-title"       class="plot-title">Groundwater Age Distribution in Well (Incremental)</div>
+        <div id="gw-increment-plot"        class="flot-plot"></div> 
+        <div id="gw-increment-plot-xlabel" class="plot-xlabel">Age (years)</div>
+        <div id="gw-increment-plot-ylabel" class="ylabel">Fraction of Sample (% per year)</div>
+    </div>
+    <div id="gw-sum-group">
+        <div id="gw-cumulative-title"       class="plot-title">Groundwater Age Distribution in Well (Cumulative)</div>
+        <div id="gw-cumulative-plot"        class="flot-plot"></div> 
+        <div id="gw-cumulative-plot-xlabel" class="plot-xlabel">Age (years)</div>
+        <div id="gw-cumulative-plot-ylabel" class="ylabel">Cummulative Fraction of Sample (%)</div>
+    </div>
+    
+    <div id="contaminant-group" >
+        <div id="contaminant-plot-title"  class="plot-title">Contaminant Trends</div>
+        <div id="contaminant-plot"        class="flot-plot"></div>     
+        <div id="contaminant-plot-xlabel" class="plot-xlabel">Year</div>
+        <div id="contaminant-plot-ylabel" class="ylabel">Concentration Relative to Maximum Input (%)</div>
+    </div>
+        
+    <div id="contaminant-depth-group">
+        <div id="contaminant-depth-title"   class="plot-title">Contaminant Concentration in</div>
+        
+        <img id="contaminant-depth-flow"    src="images/toolboxes/poisonArrows.png" alt="flowlines">
+        <div id="contaminant-depth-well"></div>
+        <div id="contaminant-depth-plot"    style="width:287px;height:200px;"></div>
+        <div id="contaminant-depth-percent" style="width:287px;height:38px;"></div>
+        <div id="contaminant-depth-year">
+            <div id="contaminant-depth-year-label">Selected Year</div>
+            <div id="arrowYrDec"     class="arrow arrowLeft arrowNormalLeft"></div>
+            <input id="yearSelected" type="text" value="1985">
+            <div id="arrowYrInc"     class="arrow arrowRight arrowNormalRight"></div>
+        </div>
+        <img id="contaminant-depth-well-outflow" src="images/toolboxes/wellOutFlow.png">
+        <div id="contaminant-depth-zone"></div>
+        <div id="contaminant-depth-plot-ylabel"  class="ylabel depth-ylabel plot-depth-ylabel">Depth Below Water Table (<span class="units">m</span>)</div>
+        <div id="contaminant-depth-year-labels"  style="width:120px;height:200px;">
+            <div id="topDate"> </div>
+            <div id="topDateP"></div>
+            <div id="botDateP"></div>
+            <div id="botDate"> </div>
+        </div>
+        <div id="contaminant-depth-recharge-ylabel" class="ylabel">Recharge Year</div>
+
+        <div id="contaminant-depth-xlabel"  class="plot-xlabel plot-xlabel-contaminant ">Concentration Relative to Maximum Input (%)</div>
+        <div class="zoomToWellScreen"><input type="checkbox" id="zoomToWellScreen"><label for="zoomToWellScreen">Zoom to Well Screen</label></div>
+    </div>
+    
+    <div class="footnote" >
+		<div style="width:1000px;margin-bottom:5px">Note: This webtool is designed to guide users through the process of evaluating how groundwater age distributions and changing contaminant inputs 
+		affect contaminant trends in wells and other groundwater discharges (<a href="http://onlinelibrary.wiley.com/doi/10.1111/gwat.12261/full" target="_blank">B&ouml;hlke and others, 2014</a>). As the aquifer model and calculations are idealized and highly simplified, 
+		the webtool is intended for educational use and should not be used for predictive purposes.
+		</div>
+	    <div ><sup>1</sup> 
+	    The partial exponential model (PEM) is used for all age distribution calculations.
+	    Jurgens, B.C., B&ouml;hlke, J.K., and Eberts, S.M., 2012, <a href="http://ca.water.usgs.gov/user_projects/TracerLPM/" target="_blank">TracerLPM (Version 1)</a>: <br>
+		&nbsp;&nbsp;&nbsp;An Excel&reg; workbook for interpreting groundwater age distributions from environmental tracer data: U.S. Geological Survey Techniques and Methods Report 4-F3, 60p.
+	    </div>
+	    <div ><sup>2</sup> Users may interact with the webtool input data boxes and the open circles on the graphs.</div>
+	    <div ><sup>3</sup> Horizontal dimensions do not affect calculations.</div>
+	    <div ><sup>4</sup> Simulates nonpoint-source contaminant input across the entire contributing area of well.</div>
+	    <div ><sup>5</sup> Contaminant years may be between 1850 and 2100. Each year must be equal to or greater than the previous value.</div>
+	    <div ><sup>6</sup> Degradation is modelled as first-order decay. The decay constant (1/yr) is equal to ln(2) divided by the half life in years.</div>
+    </div>
+    
+</div>
+
+<script language="javascript" type="text/javascript" src="js/ageMixTool.js"></script>
+
+    				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+<table id="contenttable" cellspacing="0" cellpadding="0">
+    <!--DWLayoutTable-->
+<tr>
+        <td width="100%" height="16" valign="top" class="addborderright addborderleft">	<!-- BEGIN USGS Footer Template -->
+	<div id="usgsfooter">
+    <div id="linksfooterbar">
+	<a href="http://www.usgs.gov/" title="USGS Home page">USGS Home</a>
+	<a href="http://water.usgs.gov/" title="USGS Water Resources Discipline">Water Resources</a>
+	<a href="http://biology.usgs.gov/" title="USGS Biological Resources Discipline">Biology</a>
+	<a href="http://geography.usgs.gov/" title="USGS Geography Discipline">Geography</a>
+
+	<a href="http://geology.usgs.gov/index.htm" title="USGS Geology Discipline">Geology</a>
+	<a href="http://www.usgs.gov/ngpo/" title="USGS National Geospatial Program Office">Geospatial</a>
+</div>
+	<p id="usgsfooterbar">
+		<a href="http://www.usgs.gov/laws/accessibility.html" title="Accessibility Policy (Section 508)">Accessibility</a>
+		<a href="http://www.usgs.gov/foia/" title="Freedom of Information Act">FOIA</a>
+		<a href="http://www.usgs.gov/laws/privacy.html" title="Privacy policies of the U.S. Geological Survey.">Privacy</a>
+
+		<a href="http://www.usgs.gov/laws/policies_notices.html" title="Policies and notices that govern information posted on USGS Web sites.">Policies and Notices</a>
+	</p>
+		<p id="usgsfootertext">
+        <a href="http://www.takepride.gov/"><img src="images/footer_graphic_takePride.jpg" alt="Take Pride in America logo" title="Take Pride in America Home Page" width="60" height="58" /></a>
+		<a href="http://usa.gov/"><img src="images/footer_graphic_usagov.jpg" alt="USA.gov logo" width="90" height="26" style="float: right; margin-right: 10px;" title="USAGov: Government Made Easy." /></a>
+		<a href="http://www.doi.gov/">U.S. Department of the Interior</a> |
+        <a href="http://www.usgs.gov/">U.S. Geological Survey</a>
+
+        <br />
+ <br />
+	Page Contact Information: <a href="mailto:wellassessment@usgs.gov?subject=Public-supply Well Assessment">wellassessment@usgs.gov</a><br />
+	Page Last Modified: <!-- #BeginDate format:Am1a -->April 17, 2014 1:37 AM<!-- #EndDate --> </p>
+	</div>
+	<!-- END USGS Footer Template -->
+<!--Use the Framework exec cmd when you are on a staging or a state page.   This script interprets the page you are coming from and automatically pulls the RT imagemap file for that state-->
+<!--#exec cmd="/afs/usgs.gov/www/Framework/includes/RTmap/load_waterwatch_image-map.ksh" --></td>
+    </tr>
+    
+</table>
+
+<div id="splashContent" class="hidden" title="GAMACTT User's Guide">
+      <p>
+        Use this USGS Groundwater Age Mixtures and Contaminant Trends Tool to explore the effects of basic aquifer properties and well configurations on groundwater age mixtures in groundwater discharge and on contaminant trends from varying nonpoint-source contaminant input scenarios. 
+      </p>
+      <h3>Guide Resources</h3>
+      <p>
+	        <a href="GAMACTT-v1-Documentation_and_Example_applications.pdf" target="_blank">Description of webtool and example applications.</a>
+      </p>    
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48058058-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+<!-- InstanceEnd -->
+</html>

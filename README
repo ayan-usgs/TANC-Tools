@@ -1,0 +1,8 @@
+This project uses a survey & report method to generate HTML report (for previews) 
+and PDF reports for download.
+
+It has no external dependencies. It is a single page application that uses JSON
+files for the survey content and dynamic report generation based on the answers to the survey.
+
+This project houses the stand alone USGS Groundwater Age Mixtures and Contaminant Trends Tool.
+It can be access at http://cida.usgs.gov/gamactt/

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+	id="WebApp_ID" version="2.5">
+  <display-name>NAWQA TANC {Owner: JLT, Coder:GJ}</display-name>
+  
+  <!-- ========================================================== --> 
+        <!-- Welcome Files --> 
+        <!-- ========================================================== --> 
+
+        <!-- Define, in order of preference, which file to show when no filename is defined in the path --> 
+        <!-- eg: when user goes to http://yoursite.com/ or http://yoursite.com/somefolder --> 
+        <!-- Defaults are provided in the server-wide web.xml file, such as index.jsp, index.htm --> 
+        <!-- Note: using this tag overrides the defaults, so don't forget to add them here --> 
+        <welcome-file-list> 
+                <!-- Use index.swf if present, or splash.jsp, otherwise just look for the normal defaults --> 
+                <welcome-file>index.html</welcome-file>  
+        </welcome-file-list> 
+        
+</web-app>

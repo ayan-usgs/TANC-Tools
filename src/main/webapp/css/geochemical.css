@@ -1,0 +1,61 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input {
+    text-align:right;
+}
+form.bounds {
+    border-top: 1px solid #5BA5D2;
+    border-bottom: 1px solid #5BA5D2;
+    background-color:#FBF0DB;
+    margin-bottom:30px;
+    width:900px;
+}
+
+ul.redox {
+    list-style-type: none;
+    margin-bottom:20px;
+}
+ul.redox li {
+    float:left;
+    display:inline-block;
+}
+ul.redox div {
+    display:block;
+    font-weight:bold;
+    text-align:center;
+}
+ul.redox span {
+	clear:both;
+	position:relative;
+    display:inline-block;
+    width:75px;
+}
+ul.redox input {
+    width:50px;
+}
+ul.redox-input div {
+    width:110px;
+}
+ul.redox-result div {
+    width:225px;
+}
+
+div.warning {
+    color: red;
+    display: inline-block;
+    font-style: oblique;
+    height:22px;
+}
+#Fe-SO4 {
+    vertical-align: top;
+}
+.result {
+	font-weight:bold;
+	color:#5BA5D2;
+	height:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+}

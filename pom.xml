@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gov.usgs.cida.nawqa.tanc</groupId>
+	<artifactId>tanc-tools</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>tanc tools</name>
+	<url>http://cida.usgs.gov/wellassessment/</url>
+
+    <organization>
+        <name>Center for Integrated Data Analytics</name>
+        <url>http://cida.usgs.gov</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>Public Domain</name>
+            <url>http://en.wikipedia.org/wiki/Public_domain_software</url>
+            <comments>All work of the US Government enter into the Public Domain within
+                the United States.  Whether that work is public domain outside of
+                the United States depends on various factors.
+            </comments>
+        </license>
+    </licenses>
+
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://internal.cida.usgs.gov/jira/browse/NAWQADWH</url>
+	</issueManagement>
+
+    <developers>
+        <developer>
+            <id>uselmann</id>
+            <name>David Uselmann</name>
+            <email>duselmann@usgs.gov</email>
+            <roles>
+                <role>Software Developer</role>
+            </roles>
+            <organization>Center for Integrated Data Analytics</organization>
+            <organizationUrl>http://cida.usgs.gov</organizationUrl>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+    
+    <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cida.maven.url>http://internal.cida.usgs.gov/maven</cida.maven.url>
+		<build.scm.version>${buildNumber}</build.scm.version>
+	</properties>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://cida-eros-nawqadev.er.usgs.gov:8081/jenkins/</url>
+	</ciManagement>
+
+	<scm>
+		<developerConnection>scm:git:ssh://git@github/USGS-CIDA/TANC-Tools.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>cida-releases</id>
+			<name>CIDA Releases</name>
+			<url>${cida.maven.url}/content/repositories/cida-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>cida-snapshots</id>
+			<name>CIDA Snapshots</name>
+			<url>${cida.maven.url}/content/repositories/cida-snapshots/s</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>cida-releases</id>
+			<url>${cida.maven.url}/content/repositories/cida-releases</url>
+		</repository>
+		<repository>
+			<id>cida-snapshots</id>
+			<url>${cida.maven.url}/content/repositories/cida-snapshots</url>
+		</repository>
+		<repository>
+			<id>cida-thirdparty</id>
+			<url>${cida.maven.url}/content/repositories/cida-thirdparty/</url>
+		</repository>
+	</repositories>
+
+
+	<build>
+		<finalName>tanc-tools</finalName>
+		<plugins>
+		</plugins>
+	</build>
+</project>

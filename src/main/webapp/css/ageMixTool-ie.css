@@ -1,0 +1,72 @@
+#contaminant-depth-well {
+    height: 185px !important;
+}
+
+#mainbody {
+    margin-top:10px;
+}
+
+#ageplot div.legend {
+    position:relative;
+    top: -238px;
+    left: -5px;
+}
+#contaminantplot div.legend {
+    position:relative;
+    top: -243px;
+}
+
+#legendary {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+#legendary li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+#legendary span {
+    display: inline-block;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:small;
+}
+#legendary div {
+    margin-right:5px;
+    width:14px;
+}
+
+#incrementplot-ylabel {
+	width:190px;
+	left:325px;
+}
+
+#warnMsieBg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	z-index:9999;
+	opacity:.4;
+}
+
+#warnMsieMsg  {
+	border:5px solid #009;
+	position:absolute;
+	top:0;
+	left:0;
+	width:300px;
+	height:150px;
+	background-color:#FFF;
+	z-index:99999;
+	margin-top:25%;
+	margin-left:40%;
+	padding:20px;
+	text-align:center;
+}
+
+#warnMsieMsg  input {
+	font-weight:bold;
+}
