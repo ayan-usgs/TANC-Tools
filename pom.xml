@@ -55,7 +55,9 @@
 	</ciManagement>
 
 	<scm>
-		<developerConnection>scm:git:ssh://git@github/USGS-CIDA/TANC-Tools.git</developerConnection>
+		<url>https://github.com/USGS-CIDA/TANC-Tools</url>
+		<connection>scm:git:https://github.com/USGS-CIDA/TANC-Tools.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/USGS-CIDA/TANC-Tools.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
